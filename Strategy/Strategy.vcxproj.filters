@@ -6,15 +6,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sorter.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="BubbleSort.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionSort.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sorter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertionSort.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionSort.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

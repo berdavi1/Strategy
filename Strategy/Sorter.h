@@ -4,22 +4,22 @@
 
 namespace Strategy
 {
-    enum class SortStrategy
-    {
-        Bubble,
-        Insertion,
-        Selection
-    };
 
+    template <class T>
     class Sorter final
     {
     public:
-        Sorter(SortStrategy strategy);
+        Sorter()
+        {
 
-        // Do not change
-        void sort(std::vector<int>& vector) const;
+        }
+
+        void sort(std::vector<int>& vector) const
+        {
+            strategy_.sort(vector);
+        }
 
     private:
-        const SortStrategy strategy_;
+        const T strategy_;
     };
 }
