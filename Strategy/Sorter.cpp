@@ -2,12 +2,6 @@
 
 namespace Strategy
 {
-    void swap(int& xp, int& yp)
-    {
-        int temp = xp;
-        xp = yp;
-        yp = temp;
-    }
 
     void bubbleSort(std::vector<int>& vector)
     {
@@ -19,7 +13,7 @@ namespace Strategy
             {
                 if (vector[j] > vector[j + 1])
                 {
-                    swap(vector[j], vector[j + 1]);
+                    std::swap(vector[j], vector[j + 1]);
                 }
             }
         }
@@ -60,7 +54,7 @@ namespace Strategy
                 }
             }
 
-            swap(vector[min_idx], vector[i]);
+            std::swap(vector[min_idx], vector[i]);
         }
     }
 
