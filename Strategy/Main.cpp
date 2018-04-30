@@ -23,8 +23,8 @@ void printVector(const std::vector<int>& vector)
 }
 
 // Do not change
-template<class Sorter>
-void sortVector(const Sorter& sorter, std::vector<int> vector, const std::string& name)
+template<class T>
+void sortVector(const Sorter<T>& sorter, std::vector<int> vector, const std::string& name)
 {
     std::cout << name << " sort" << std::endl;
     printVector(vector);
